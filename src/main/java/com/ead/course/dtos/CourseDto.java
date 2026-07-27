@@ -19,7 +19,7 @@ public class CourseDto {
     @NotNull
     private CourseStatus courseStatus;
     @NotNull
-    private UUID UserInstructor;
+    private UUID userInstructor;
     @NotNull
     private CourseLevel courseLevel;
 }
