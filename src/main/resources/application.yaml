@@ -22,6 +22,9 @@ spring:
       hibernate:
         show_sql: true
 
+  rabbitmq:
+    addresses: amqps://takilztr:DNmWXGQ5t2lPE5wF3F-UmmV_8Oz0fFAs@leopard.lmq.cloudamqp.com/takilztr
+
 ead:
   api:
     url:
