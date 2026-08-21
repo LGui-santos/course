@@ -22,9 +22,10 @@ public class RabbitmqConfig {
         return template;
     }
 
+    @Bean
     public JacksonJsonMessageConverter messageConverter() {
-        ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.registerModule(new JavaTimeModule());
-        return new JacksonJsonMessageConverter(String.valueOf(objectMapper));
+        JacksonJsonMessageConverter converter = new JacksonJsonMessageConverter();
+        converter.setAlwaysConvertToInferredType(true);
+        return converter;
     }
 }
